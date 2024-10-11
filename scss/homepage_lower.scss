@@ -334,7 +334,7 @@ header {
 }
 
 #folder-container {
-  padding: 48px 0px;
+  padding: 32px 16px;
   display: flex;
   align-items: start;
   justify-content: space-evenly;
@@ -342,7 +342,9 @@ header {
 }
 
 .folder {
-  width: 120px;
+  flex: 1 0 33.3%;
+  // margin-left: 12px;
+  // margin-right: 12px;
   margin-top: 16px;
   margin-bottom: 16px;
   display: flex;
@@ -473,6 +475,10 @@ footer {
     line-height: 64px;
   }
 
+  .folder {
+    flex: 1 0 25%;
+  }
+
   #faqs > h1 {
     font-size: 56px;
     line-height: 64px;
@@ -500,6 +506,10 @@ footer {
 }
 
 @media (min-width: 1240px) {
+  .folder {
+    flex: 1 0 12%;
+  }
+  
   footer {
     height: 200px;
     flex-direction: row;
