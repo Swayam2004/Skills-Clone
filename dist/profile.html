@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Profile Page</title>
     <link rel="stylesheet" href="css/profile.css" />
-    <link rel="stylesheet" href="css/homepage_upper.css">
+    <link rel="stylesheet" href="css/homepage_upper.css" />
+    <link rel="stylesheet" href="css/homepage_lower.css" />
   </head>
   <body>
-    <div class="nav-and-side"></div>
+    <div class="nav-and-side">
       <nav class="nav-bar">
         <img class="logo" alt="logo" src="img/Group682.svg" />
         <ul class="nav-list">
@@ -27,7 +28,7 @@
           <a><img class="hideOnPC" src="img/hamburgerMenu.svg" alt="menu" /></a>
         </li>
       </nav>
-      <div class="sidebar-div">
+      <div class="sidebar-div" style="display: none;">
         <ul class="sidebar">
           <li onclick="hideSidebar()">
             <a href="#"><img alt="Close" src="img/Close.svg" /></a>
@@ -41,24 +42,6 @@
         </ul>
       </div>
     </div>
-    <!-- <nav>
-      <div class="flex container nav-con">
-        <div class="main-nav flex">
-          <img src="img/asset5.png" alt="logo" class="nav-img" />
-          <ul class="nav-items flex">
-            <li><a href="#">The Process</a></li>
-            <li><a href="#">Timeline</a></li>
-            <li><a href="#">The Perks</a></li>
-            <li><a href="#">Explore Domains</a></li>
-          </ul>
-        </div>
-        <div class="sec-nav">
-          <button class="nav-bt">My Profile</button>
-          <button class="nav-bt1">Register</button>
-          <a href="#" class="nav-toggle"><i class="fa-solid fa-bars"></i></a>
-        </div>
-      </div>
-    </nav> -->
     <div class="conatiner header-sec flex">
       <div class="header-left">
         <div class="profile1">
@@ -123,9 +106,41 @@
         </div>
       </div>
     </div>
+    <footer>
+      <div id="footer-main">
+        <img src="img/skills++.svg" alt="skills++" />
+        <p>
+          A event organized by Zairza for the welfare of budding talented
+          software engineers, hardware engineers and designers.
+        </p>
+      </div>
+      <div id="footer-links">
+        <a href="https://www.youtube.com/@zairzarobosofdescluboutrb1825"
+          >YouTube</a
+        >
+        <a href="https://www.instagram.com/zairza.outr/">Instagram</a>
+        <a href="https://in.linkedin.com/company/zairza">LinedIn</a>
+      </div>
+    </footer>
     <script
       src="https://kit.fontawesome.com/8c9ab96698.js"
       crossorigin="anonymous"
     ></script>
+    <script>
+      function showSidebar() {
+      const sidebar = document.querySelector(".sidebar");
+      sidebar.style.display = "none";
+    }
+
+    function hideSidebar() {
+      const sidebar = document.querySelector(".sidebar");
+      sidebar.style.display = "none";
+    }
+
+    function goToProfile() {
+      // Simulate a mouse click:
+      window.location.href = "profile.html";
+    }
+    </script>
   </body>
 </html>

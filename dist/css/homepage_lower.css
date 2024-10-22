@@ -26,6 +26,10 @@ html {
   color-scheme: dark light;
 }
 
+body {
+  min-height: 100vh;
+}
+
 img,
 picture,
 svg,
@@ -55,8 +59,7 @@ header {
   background-color: rgba(255, 255, 255, 0.2);
   display: flex;
   justify-content: space-between;
-  -webkit-backdrop-filter: blur(15px);
-          backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
   filter: drop-shadow(0 4px 4px rgba(255, 255, 255, 0.2));
 }
 
@@ -214,6 +217,7 @@ header {
 }
 
 #image-section > img {
+  width: calc(50% - 32px);
   margin-bottom: 32px;
 }
 
@@ -436,6 +440,9 @@ footer {
     font-size: 64px;
     line-height: 64px;
   }
+  #image-section > img {
+    width: calc(25% - 32px);
+  }
   #domains-heading > h4 {
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -453,6 +460,9 @@ footer {
   }
 }
 @media (min-width: 734px) {
+  #image-section > img {
+    width: 160px;
+  }
   footer {
     height: 200px;
   }

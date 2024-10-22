@@ -29,9 +29,9 @@ html {
   color-scheme: dark light;
 }
 
-// body {
-//   min-height: 100vh;
-// }
+body {
+  min-height: 100vh;
+}
 
 img,
 picture,
@@ -236,6 +236,7 @@ header {
 }
 
 #image-section > img {
+  width: calc(50% - 32px);
   margin-bottom: 32px;
 }
 
@@ -465,6 +466,10 @@ footer {
     line-height: 64px;
   }
 
+  #image-section > img {
+    width: calc(25% - 32px);
+  }
+
   #domains-heading > h4 {
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -486,6 +491,10 @@ footer {
 }
 
 @media (min-width: 734px) {
+  #image-section > img {
+    width: 160px;
+  }
+
   footer {
     height: 200px;
   }
@@ -509,7 +518,7 @@ footer {
   .folder {
     flex: 1 0 12%;
   }
-  
+
   footer {
     height: 200px;
     flex-direction: row;

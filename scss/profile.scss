@@ -31,9 +31,9 @@ html {
   color-scheme: dark light;
 }
 
-// body {
-//   min-height: 100vh;
-// }
+body {
+  min-height: 100vh;
+}
 
 img,
 picture,
@@ -68,22 +68,22 @@ p {
   line-height: 1.8rem;
 }
 
-a {
-  text-decoration: none;
-  display: inline-block;
-  color: rgba(195, 193, 206, 1);
-  font-size: small;
-  font-weight: 600;
-}
+// a {
+//   text-decoration: none;
+//   display: inline-block;
+//   color: rgba(195, 193, 206, 1);
+//   font-size: small;
+//   font-weight: 600;
+// }
 
 .flex {
   display: flex;
   align-items: center;
 }
 
-ul {
-  list-style: none;
-}
+// ul {
+//   list-style: none;
+// }
 
 /* utility classes */
 
@@ -104,9 +104,9 @@ ul {
   margin-right: 2.85em;
 }
 
-li {
-  margin-right: 1em;
-}
+// li {
+//   margin-right: 1em;
+// }
 
 .nav-con {
   background-color: rgba(89, 86, 107, 1);
@@ -166,13 +166,13 @@ button.nav-bt1 {
   width: 100%;
   background-color: rgba(154, 141, 236, 1);
   border-radius: 15px;
-  bottom: 0px;
+  bottom: 150px;
   height: 28%;
 }
 
 .girl {
   position: absolute;
-  bottom: 0px;
+  bottom: 150px; 
   height: 65%;
   transform: translateX(8%);
 }

@@ -1,91 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login Page</title>
-    <link rel="stylesheet" href="./css/login.css">
-    <link rel="stylesheet" href="css/homepage_upper.css">
-    <link rel="stylesheet" href="css/homepage_lower.css">
-</head>
-<body>
-  <div class="nav-and-side">
-    <nav class="nav-bar">
-      <img class="logo" alt="logo" src="img/Group682.svg" />
-      <ul class="nav-list">
-        <li class="nav-text"></li>
-        <li class="hideOnMobile"><a href="#section2">Process</a></li>
-        <li class="hideOnMobile"><a href="#schedule">Timeline</a></li>
-        <li class="hideOnMobile"><a href="#perks">Perks</a></li>
-        <li class="hideOnMobile"><a href="#domains">Explore Domains</a></li>
-        <li class="hideOnMobile"><a href="#faqs">FAQs</a></li>
-      </ul>
+    <link rel="stylesheet" href="./css/login.css" />
+    <link rel="stylesheet" href="css/homepage_upper.css" />
+    <link rel="stylesheet" href="css/homepage_lower.css" />
+  </head>
+  <body>
+    <div class="nav-and-side">
+      <nav class="nav-bar">
+        <img class="logo" alt="logo" src="img/Group682.svg" />
+        <ul class="nav-list">
+          <li class="nav-text"></li>
+          <li class="hideOnMobile"><a href="#section2">Process</a></li>
+          <li class="hideOnMobile"><a href="#schedule">Timeline</a></li>
+          <li class="hideOnMobile"><a href="#perks">Perks</a></li>
+          <li class="hideOnMobile"><a href="#domains">Explore Domains</a></li>
+          <li class="hideOnMobile"><a href="#faqs">FAQs</a></li>
+        </ul>
 
-      <button class="register" type="button" onclick="goToRegister()">
-        <a href="register.html">Register</a>
-      </button>
-      <li onclick="showSidebar()" class="hideOnPC">
-        <a><img class="hideOnPC" src="img/hamburgerMenu.svg" alt="menu" /></a>
-      </li>
-    </nav>
-    <div class="sidebar-div">
-      <ul class="sidebar">
-        <li onclick="hideSidebar()">
-          <a href="#"><img alt="Close" src="img/Close.svg" /></a>
+        <button class="register" type="button" onclick="goToRegister()">
+          <a href="register.html">Register</a>
+        </button>
+        <li onclick="showSidebar()" class="hideOnPC">
+          <a><img class="hideOnPC" src="img/hamburgerMenu.svg" alt="menu" /></a>
         </li>
-        <li class="nav-text-sidebar"></li>
-        <li class="showOnMobile"><a href="#section2">Process</a></li>
-        <li class="showOnMobile"><a href="#schedule">Timeline</a></li>
-        <li class="showOnMobile"><a href="#perks">Perks</a></li>
-        <li class="showOnMobile"><a href="#domains">Explore Domains</a></li>
-        <li class="showOnMobile"><a href="#faqs">FAQs</a></li>
-      </ul>
+      </nav>
+      <div class="sidebar-div" style="display: none;">
+        <ul class="sidebar">
+          <li onclick="hideSidebar()">
+            <a href="#"><img alt="Close" src="img/Close.svg" /></a>
+          </li>
+          <li class="nav-text-sidebar"></li>
+          <li class="showOnMobile"><a href="#section2">Process</a></li>
+          <li class="showOnMobile"><a href="#schedule">Timeline</a></li>
+          <li class="showOnMobile"><a href="#perks">Perks</a></li>
+          <li class="showOnMobile"><a href="#domains">Explore Domains</a></li>
+          <li class="showOnMobile"><a href="#faqs">FAQs</a></li>
+        </ul>
+      </div>
     </div>
-  </div>
     <section class="login-section">
-        <div><img src="img/illu.svg" class="bg"></div>
-        <div class="login-form">
-            <h1>Welcome back!!</h1>
-            <h2>LOG IN</h2>
-            <p>Haven't registered yet? <a href="register.html">Register</a></p>
-            
-            <form>
-                <input type="email" placeholder="E - mail">
-                <input type="password" placeholder="Password">
-                <span class="toggle-password" onclick="toggleP()"></span>
-                <a href="#">Forgot Password?</a>
-                <div class="form-actions">
-                    <button type="button" class="back-btn">← Back</button>
-                    <button type="submit" class="login-btn">Log In →</button>
-                </div>
-       </form>
-        </div>
+      <div><img src="img/illu.svg" class="bg" /></div>
+      <div class="login-form">
+        <h1>Welcome back!!</h1>
+        <h2>LOG IN</h2>
+        <p>Haven't registered yet? <a href="register.html">Register</a></p>
+
+        <form>
+          <input type="email" placeholder="E - mail" />
+          <input type="password" placeholder="Password" />
+          <span class="toggle-password" onclick="toggleP()"></span>
+          <a href="#" class="f-pass">Forgot Password?</a>
+          <div class="form-actions">
+            <button type="button" class="back-btn">← Back</button>
+            <button type="button" class="login-btn" onclick="goToProfile()">
+              Log In →
+            </button>
+          </div>
+        </form>
+      </div>
     </section>
     <footer>
-        <div id="footer-main">
-          <img src="img/skills++.svg" alt="skills++" />
-          <p>
-            A event organized by Zairza for the welfare of budding talented
-            software engineers, hardware engineers and designers.
-          </p>
-        </div>
-        <div id="footer-links">
-          <a href="https://www.youtube.com/@zairzarobosofdescluboutrb1825"
-            >YouTube</a
-          >
-          <a href="https://www.instagram.com/zairza.outr/">Instagram</a>
-          <a href="https://in.linkedin.com/company/zairza">LinedIn</a>
-        </div>
-      </footer>
-</body>
-<script>
+      <div id="footer-main">
+        <img src="img/skills++.svg" alt="skills++" />
+        <p>
+          A event organized by Zairza for the welfare of budding talented
+          software engineers, hardware engineers and designers.
+        </p>
+      </div>
+      <div id="footer-links">
+        <a href="https://www.youtube.com/@zairzarobosofdescluboutrb1825"
+          >YouTube</a
+        >
+        <a href="https://www.instagram.com/zairza.outr/">Instagram</a>
+        <a href="https://in.linkedin.com/company/zairza">LinedIn</a>
+      </div>
+    </footer>
+  </body>
+  <script>
     function showSidebar() {
       const sidebar = document.querySelector(".sidebar");
-      sidebar.style.display = "flex";
+      sidebar.style.display = "none";
     }
+
     function hideSidebar() {
       const sidebar = document.querySelector(".sidebar");
       sidebar.style.display = "none";
     }
-</script>
+
+    function goToProfile() {
+      // Simulate a mouse click:
+      window.location.href = "profile.html";
+    }
+  </script>
 </html>

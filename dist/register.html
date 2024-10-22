@@ -1,189 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/register.css" />
+    <link rel="stylesheet" href="css/homepage_upper.css" />
+    <link rel="stylesheet" href="css/homepage_lower.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <title>Register Page</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/register.css">
-    <link rel="stylesheet" href="css/homepage_upper.css">
-    <link rel="stylesheet" href="css/homepage_lower.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <title>Document</title>
-</head>
-
-<body>
+  <body>
     <!--Navbar-->
-    <!-- <nav class="nav_par">
-        <div class="navbar">
-            <img src="/images/s++.png" alt="" class="logo">
-            <ul class="side-menu">
-                <li>The Process</li>
-                <li>Timeline</li>
-                <li>The Perks</li>
-                <li>Explore Domains</li>
-                <li>FAQs</li>
-            </ul>
-            <a href="" class="reg_btn" onclick="toggle()">Register</a>
-            <span class="material-symbols-outlined menu">menu</span>
-        </div>
-        <div class="dropdown-content">
-            <a href="#">The Process</a>
-            <a href="#">Timeline</a>
-            <a href="#">The Perks</a>
-            <a href="#">Explore Domains</a>
-            <a href="#">FAQs</a>
-        </div>
-    </nav> -->
     <div class="nav-and-side">
-        <nav class="nav-bar">
-          <img class="logo" alt="logo" src="img/Group682.svg" />
-          <ul class="nav-list">
-            <li class="nav-text"></li>
-            <li class="hideOnMobile"><a href="#section2">Process</a></li>
-            <li class="hideOnMobile"><a href="#schedule">Timeline</a></li>
-            <li class="hideOnMobile"><a href="#perks">Perks</a></li>
-            <li class="hideOnMobile"><a href="#domains">Explore Domains</a></li>
-            <li class="hideOnMobile"><a href="#faqs">FAQs</a></li>
-          </ul>
-  
-          <button class="register" type="button" onclick="goToRegister()">
-            <a href="register.html">Register</a>
-          </button>
-          <li onclick="showSidebar()" class="hideOnPC">
-            <a><img class="hideOnPC" src="img/hamburgerMenu.svg" alt="menu" /></a>
+      <nav class="nav-bar">
+        <img class="logo" alt="logo" src="img/Group682.svg" />
+        <ul class="nav-list">
+          <li class="nav-text"></li>
+          <li class="hideOnMobile"><a href="#section2">Process</a></li>
+          <li class="hideOnMobile"><a href="#schedule">Timeline</a></li>
+          <li class="hideOnMobile"><a href="#perks">Perks</a></li>
+          <li class="hideOnMobile"><a href="#domains">Explore Domains</a></li>
+          <li class="hideOnMobile"><a href="#faqs">FAQs</a></li>
+        </ul>
+
+        <button class="register" type="button" onclick="goToRegister()">
+          <a href="register.html">Register</a>
+        </button>
+        <li onclick="() => showSidebar()" class="hideOnPC">
+          <a><img class="hideOnPC" src="img/hamburgerMenu.svg" alt="menu" /></a>
+        </li>
+      </nav>
+      <div class="sidebar-div" style="display: none;">
+        <ul class="sidebar">
+          <li onclick="() => hideSidebar()">
+            <a href="#"><img alt="Close" src="img/Close.svg" /></a>
           </li>
-        </nav>
-        <div class="sidebar-div">
-          <ul class="sidebar">
-            <li onclick="hideSidebar()">
-              <a href="#"><img alt="Close" src="img/Close.svg" /></a>
-            </li>
-            <li class="nav-text-sidebar"></li>
-            <li class="showOnMobile"><a href="#section2">Process</a></li>
-            <li class="showOnMobile"><a href="#schedule">Timeline</a></li>
-            <li class="showOnMobile"><a href="#perks">Perks</a></li>
-            <li class="showOnMobile"><a href="#domains">Explore Domains</a></li>
-            <li class="showOnMobile"><a href="#faqs">FAQs</a></li>
-          </ul>
-        </div>
+          <li class="nav-text-sidebar"></li>
+          <li class="showOnMobile"><a href="#section2">Process</a></li>
+          <li class="showOnMobile"><a href="#schedule">Timeline</a></li>
+          <li class="showOnMobile"><a href="#perks">Perks</a></li>
+          <li class="showOnMobile"><a href="#domains">Explore Domains</a></li>
+          <li class="showOnMobile"><a href="#faqs">FAQs</a></li>
+        </ul>
       </div>
+    </div>
+
     <!--Form-heads-->
     <div class="form-sec">
-        <img src="/images/sprint.jpg" alt="" class="join-img-mob">
-        <img src="/images/join_2.jpg" alt="" class="join-img-pc">
-        <div class="log-in"><span class="reg-al">Already have registered?</span> <a href="login.html">Log in</a></div>
+      <img src="img/sprint.jpg" alt="" class="join-img-mob" />
+      <img src="img/join_2.jpg" alt="" class="join-img-pc" />
+      <div class="log-in">
+        <span class="reg-al">Already have registered?</span>
+        <a href="login.html">Log in</a>
+      </div>
     </div>
     <form action="" class="form">
-        <img src="/images/lady_2.svg" alt="" class="lady-run">
-    <div class="real">
-        <div class="full-inputs">
-            <input type="text" name="name" id="name" placeholder="Full Name">
-            <input type="email" name="email" id="email" placeholder="E-mail">
-            <input type="password" name="email" id="pass" placeholder="Set a password">
-        </div>
-        <div class="half-inputs">
+      <img src="img/lady_2.svg" alt="" class="lady-run" />
+      <div>
+        <div class="real">
+          <div class="full-inputs">
+            <input type="text" name="name" id="name" placeholder="Full Name" />
+            <input type="email" name="email" id="email" placeholder="E-mail" />
+            <input
+              type="password"
+              name="email"
+              id="pass"
+              placeholder="Set a password"
+            />
+          </div>
+          <div class="half-inputs">
             <div class="grp-1">
-                <input type="number" name="registration" id="reg-num" placeholder="Registration Number">
-                <input type="number" name="phone" id="phone" placeholder="Phone Number" class="rights">
+              <input
+                type="number"
+                name="registration"
+                id="reg-num"
+                placeholder="Registration Number"
+              />
+              <input
+                type="number"
+                name="phone"
+                id="phone"
+                placeholder="Phone Number"
+                class="rights"
+              />
             </div>
             <div class="grp-2">
-                <div class="branch">
-                    <select title="Branch">
-                        <option value="0">Branch</option>
-                        <option value="1">Architecture</option>
-                        <option value="2">Biotechnology</option>
-                        <option value="3">Civil Engineering</option>
-                        <option value="4">CSE</option>
-                        <option value="5">CSE - AI & ML</option>
-                        <option value="6">Electrical Engineering</option>
-                        <option value="7">ECE</option>
-                        <option value="8">E&I</option>
-                        <option value="9">IT</option>
-                        <option value="10">Mechanical Engineering</option>
-                        <option value="11">ME - AI & Robotics</option>
-                        <option value="12">Textile Engineering</option>
-                        <option value="13">Fashion & Apparel Technology</option>
-                        <option value="14">Planning</option>
-                        <option value="15">Integrated M.Sc</option>
-                        <option value="16">M.Tech</option>
-                    </select>
-                </div>
-                <div class="year"></div>
-                <select title="Year">
-                    <option value="0">Year</option>
-                    <option value="1">1st year</option>
-                    <option value="2">2nd year</option>
-                    <option value="3">3rd year</option>
-                    <option value="4">4th year</option>
+              <div class="branch">
+                <select title="Branch">
+                  <option value="0">Branch</option>
+                  <option value="1">Architecture</option>
+                  <option value="2">Biotechnology</option>
+                  <option value="3">Civil Engineering</option>
+                  <option value="4">CSE</option>
+                  <option value="5">CSE - AI & ML</option>
+                  <option value="6">Electrical Engineering</option>
+                  <option value="7">ECE</option>
+                  <option value="8">E&I</option>
+                  <option value="9">IT</option>
+                  <option value="10">Mechanical Engineering</option>
+                  <option value="11">ME - AI & Robotics</option>
+                  <option value="12">Textile Engineering</option>
+                  <option value="13">Fashion & Apparel Technology</option>
+                  <option value="14">Planning</option>
+                  <option value="15">Integrated M.Sc</option>
+                  <option value="16">M.Tech</option>
                 </select>
+              </div>
+              <div class="year"></div>
+              <select title="Year">
+                <option value="0">Year</option>
+                <option value="1">1st year</option>
+                <option value="2">2nd year</option>
+                <option value="3">3rd year</option>
+                <option value="4">4th year</option>
+              </select>
             </div>
-        </div>
-        <div class="grp-3">
+          </div>
+          <div class="grp-3">
             <div class="domain-1">
-                <select title="Domain-1">
-                    <option value="0">First Domain</option>
-                    <option value="1">Web Dev</option>
-                    <option value="2">UI / UX</option>
-                    <option value="3">App Dev</option>
-                    <option value="4">Internet of Things</option>
-                    <option value="5">Competetive Programming</option>
-                    <option value="6">Robotic Operating System</option>
-                    <option value="7">Ai / ML</option>
-                    <option value="8">Microcontroller And Embedded System</option>
-                    <option value="9">Blockchain</option>
-                    <option value="10">Video Editing</option>
-                    <option value="11">DevOps</option>
-                    <option value="12">Graphic Designing</option>
-                    <option value="13">Backend</option>
-                    <option value="14">Game-Dev</option>
-                    <option value="15">Ethical hacking & Cyber Security</option>
-                    <option value="16">Cloud Computing</option>
-                </select>
+              <select title="Domain-1">
+                <option value="0">First Domain</option>
+                <option value="1">Web Dev</option>
+                <option value="2">UI / UX</option>
+                <option value="3">App Dev</option>
+                <option value="4">Internet of Things</option>
+                <option value="5">Competetive Programming</option>
+                <option value="6">Robotic Operating System</option>
+                <option value="7">Ai / ML</option>
+                <option value="8">Microcontroller And Embedded System</option>
+                <option value="9">Blockchain</option>
+                <option value="10">Video Editing</option>
+                <option value="11">DevOps</option>
+                <option value="12">Graphic Designing</option>
+                <option value="13">Backend</option>
+                <option value="14">Game-Dev</option>
+                <option value="15">Ethical hacking & Cyber Security</option>
+                <option value="16">Cloud Computing</option>
+              </select>
             </div>
             <div class="domain-2">
-                <select title="Domain-2">
-                    <option value="0">Second Domain</option>
-                    <option value="1">Web Dev</option>
-                    <option value="2">UI / UX</option>
-                    <option value="3">App Dev</option>
-                    <option value="4">Internet of Things</option>
-                    <option value="5">Competetive Programming</option>
-                    <option value="6">Robotic Operating System</option>
-                    <option value="7">Ai / ML</option>
-                    <option value="8">Microcontroller And Embedded System</option>
-                    <option value="9">Blockchain</option>
-                    <option value="10">Video Editing</option>
-                    <option value="11">DevOps</option>
-                    <option value="12">Graphic Designing</option>
-                    <option value="13">Backend</option>
-                    <option value="14">Game-Dev</option>
-                    <option value="15">Ethical hacking & Cyber Security</option>
-                    <option value="16">Cloud Computing</option>
-                </select>
+              <select title="Domain-2">
+                <option value="0">Second Domain</option>
+                <option value="1">Web Dev</option>
+                <option value="2">UI / UX</option>
+                <option value="3">App Dev</option>
+                <option value="4">Internet of Things</option>
+                <option value="5">Competetive Programming</option>
+                <option value="6">Robotic Operating System</option>
+                <option value="7">Ai / ML</option>
+                <option value="8">Microcontroller And Embedded System</option>
+                <option value="9">Blockchain</option>
+                <option value="10">Video Editing</option>
+                <option value="11">DevOps</option>
+                <option value="12">Graphic Designing</option>
+                <option value="13">Backend</option>
+                <option value="14">Game-Dev</option>
+                <option value="15">Ethical hacking & Cyber Security</option>
+                <option value="16">Cloud Computing</option>
+              </select>
             </div>
-        </div>
-        </div>
+          </div>
         </div>
         <div class="form-text">
-            **At max you can register for 2 domains. In case you want to enrol for only one domain then fill none in the second domain. And write ‘ N/A ’ in the Drive Link( for Second Domain ) mentioned below.
-            <br><br>
-            <a href="http://">Video tutorial for reference</a>
+          **At max you can register for 2 domains. In case you want to enrol for
+          only one domain then fill none in the second domain. And write ‘ N/A ’
+          in the Drive Link( for Second Domain ) mentioned below.
+          <br /><br />
+          <a href="http://">Video tutorial for reference</a>
         </div>
         <div class="full-inputs">
-            <input type="text" name="link-1" id="link-1" placeholder="Drive Link (for first domain)">
-            <input type="text" name="link-2" id="link-2" placeholder="Drive Link (for second domain)">
+          <input
+            type="text"
+            name="link-1"
+            id="link-1"
+            placeholder="Drive Link (for first domain)"
+          />
+          <input
+            type="text"
+            name="link-2"
+            id="link-2"
+            placeholder="Drive Link (for second domain)"
+          />
         </div>
         <div class="form-text">
-            **Create a folder in your google drive and share that link here. This is the place where you will submit your solutions for the given task. So keep this drive safely with you
+          **Create a folder in your google drive and share that link here. This is
+          the place where you will submit your solutions for the given task. So
+          keep this drive safely with you
         </div>
         <div class="buttons">
-            <button class="back"><span class="material-symbols-outlined">arrow_back</span>Back</button>
-            <button class="create">Create Account<span class="material-symbols-outlined">arrow_forward</span></button>
+          <!-- <button class="back">
+            <span class="material-symbols-outlined">arrow_back</span>Back
+          </button>
+          <button class="create" type="button" onclick="goToProfile()">
+            Create Account<span class="material-symbols-outlined"
+              >arrow_forward</span
+            >
+          </button> -->
+          <button type="button" class="back">← Back</button>
+          <button type="button" class="create" onclick="goToProfile()">
+            Create Account →
+          </button>
         </div>
-    </div>
+      </div>
     </form>
     <!-- <div class="footer">
-        <img src="/images/logo_2.jpg" alt="" class="foot-logo">
+        <img src="/img/logo_2.jpg" alt="" class="foot-logo">
         <div class="foot-text">
             A event organised by Zairza for the welfare of budding talented software engineers, hardware engineers and designers
         </div>
@@ -194,31 +219,36 @@
         </ul>
     </div> -->
     <footer>
-        <div id="footer-main">
-          <img src="img/skills++.svg" alt="skills++" />
-          <p>
-            A event organized by Zairza for the welfare of budding talented
-            software engineers, hardware engineers and designers.
-          </p>
-        </div>
-        <div id="footer-links">
-          <a href="https://www.youtube.com/@zairzarobosofdescluboutrb1825"
-            >YouTube</a
-          >
-          <a href="https://www.instagram.com/zairza.outr/">Instagram</a>
-          <a href="https://in.linkedin.com/company/zairza">LinedIn</a>
-        </div>
-      </footer>
+      <div id="footer-main">
+        <img src="img/skills++.svg" alt="skills++" />
+        <p>
+          A event organized by Zairza for the welfare of budding talented
+          software engineers, hardware engineers and designers.
+        </p>
+      </div>
+      <div id="footer-links">
+        <a href="https://www.youtube.com/@zairzarobosofdescluboutrb1825"
+          >YouTube</a
+        >
+        <a href="https://www.instagram.com/zairza.outr/">Instagram</a>
+        <a href="https://in.linkedin.com/company/zairza">LinedIn</a>
+      </div>
+    </footer>
     <script>
-        function showSidebar() {
-      const sidebar = document.querySelector(".sidebar");
-      sidebar.style.display = "flex";
-    }
-    function hideSidebar() {
-      const sidebar = document.querySelector(".sidebar");
-      sidebar.style.display = "none";
-    }
-    </script>
-</body>
+      function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+      }
 
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+      }
+
+      function goToProfile() {
+        // Simulate a mouse click:
+        window.location.href = "profile.html";
+      }
+    </script>
+  </body>
 </html>

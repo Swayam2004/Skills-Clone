@@ -33,7 +33,7 @@
           <a><img class="hideOnPC" src="img/hamburgerMenu.svg" alt="menu" /></a>
         </li>
       </nav>
-      <div class="sidebar-div">
+      <div class="sidebar-div" style="display: none;">
         <ul class="sidebar">
           <li onclick="hideSidebar()">
             <a href="#"><img alt="Close" src="img/Close.svg" /></a>
@@ -60,10 +60,10 @@
           Boost your skills with guidance in various tech domains. Gain expert
           knowledge, hands-on experience, personalized mentoring, and earn a
           certification. Transform your future,
-          <span class="pulse"> REGISTER NOW!! </span>
+          <span class="pulse"> REGISTER NOW!!</span>
         </p>
         <br />
-        <button class="explore" type="button">
+        <button class="explore" type="button" onclick="goToDomain()">
           Explore Domains<img
             src="img/telescope.svg"
             alt="telescope"
@@ -171,10 +171,10 @@
           </p>
         </div>
         <div id="image-section">
-          <img src="/img/kiddo-frame.svg" alt="kiddo-frame" />
-          <img src="/img/rogue-frame.svg" alt="kiddo-frame" />
-          <img src="/img/pilot-frame.svg" alt="kiddo-frame" />
-          <img src="/img/astro-frame.svg" alt="kiddo-frame" />
+          <img src="img/kiddo-frame.svg" alt="kiddo-frame" />
+          <img src="img/rogue-frame.svg" alt="kiddo-frame" />
+          <img src="img/pilot-frame.svg" alt="kiddo-frame" />
+          <img src="img/astro-frame.svg" alt="kiddo-frame" />
         </div>
       </div>
       <div id="domains">
@@ -328,7 +328,7 @@
   <script>
     function showSidebar() {
       const sidebar = document.querySelector(".sidebar");
-      sidebar.style.display = "flex";
+      sidebar.style.display = "none";
     }
     function hideSidebar() {
       const sidebar = document.querySelector(".sidebar");
@@ -338,6 +338,10 @@
     function goToRegister() {
       // Simulate a mouse click:
       window.location.href = "register.html";
+    }
+
+    function goToDomain() {
+      window.location.href = "#domains";
     }
   </script>
 </html>
